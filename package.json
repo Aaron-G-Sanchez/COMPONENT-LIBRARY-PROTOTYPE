@@ -1,0 +1,11 @@
+{
+    "prettier": {
+        "tabWidth": 4,
+        "trailingComma": "es5",
+        "semi": false,
+        "singleQuote": true,
+        "printWidth": 80,
+        "jsxSingleQuote": false,
+        "singleAttributePerLine": true
+    }
+}
