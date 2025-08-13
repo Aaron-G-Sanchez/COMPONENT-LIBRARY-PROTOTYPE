@@ -1,0 +1,39 @@
+{
+  "name": "component-ui-prototype",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aaron-G-Sanchez/COMPONENT-LIBRARY-PROTOTYPE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "main": "./dist/comp-ui-proto.umd.cjs",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/comp-ui-proto.js",
+  "exports": {
+    ".": {
+      "import": "./dist/comp-ui-proto.js",
+      "require": "./dist/comp-ui-proto.umd.cjs"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "@types/react": "^19.1.10",
+    "@vitejs/plugin-react": "^5.0.0",
+    "sass": "^1.90.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.2"
+  },
+  "peerDependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
