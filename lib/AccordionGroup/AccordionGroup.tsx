@@ -1,13 +1,27 @@
-import { FC, ReactNode } from 'react'
+import { CSSProperties, FC, ReactNode, Ref } from 'react'
 
 import './AccordionGroup.scss'
 
 export interface AccordionGroupProps {
   children: ReactNode
+  className?: string
+  ref?: Ref<HTMLDivElement>
+  style?: CSSProperties
 }
 
 export const AccordionGroup: FC<AccordionGroupProps> = ({
-  children
+  children,
+  className = '',
+  ref,
+  style
 }: AccordionGroupProps) => {
-  return <div className="accordion-group">{children}</div>
+  const classList = className
+    ? `accordion-group ${className}`
+    : 'accordion-group'
+
+  return (
+    <div className={classList} style={style} ref={ref}>
+      {children}
+    </div>
+  )
 }

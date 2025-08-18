@@ -1,7 +1,10 @@
 .accordion-group {
   display: flex;
-  border-bottom: 1px solid black;
+  align-items: center;
+  
+  border-bottom: 1px solid #f7f7f6;
   flex-grow: 1;
+  padding: 16px;
   transition: 
     flex-grow .2s,
     background-color .2s;
@@ -9,6 +12,6 @@
 
   &:hover {
     flex-grow: 5;
-    background-color: gold;
+    background-color: #4e4e57;
   }
 }
