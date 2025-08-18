@@ -1,4 +1,4 @@
-export { Accordion } from './Accordion'
+export { Accordion, AccordionContext } from './Accordion'
 
 export { AccordionGroup } from './AccordionGroup'
 
