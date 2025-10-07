@@ -18,6 +18,8 @@ export const AccordionContent: FC<AccordionContentProps> = ({
 }) => {
   const context = useContext(AccordionContext)
 
+  console.log(groupId)
+
   const classList = className
     ? `accordion-content ${className}`
     : 'accordion-content'
